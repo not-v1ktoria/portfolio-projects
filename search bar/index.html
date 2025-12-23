@@ -1,0 +1,33 @@
+<html>   
+    <head>
+        <title> Search bar </title>
+        <link href="style.css" rel="stylesheet">
+        <script type="text/javascript">
+        var totalCount = 3;
+        function ChangeIt()
+        {
+            var num = Math.ceil (Math.random () * totalCount);
+            document.body.background = 'img/'+num+'.gif';
+            document.body.style.backgroundRepeat = "repeat";
+        }
+    </script>
+    </head>
+    <body>
+        <center>
+        <img src="img/search.gif">
+        <br>
+        <script type="text/javascript">
+        function Gsitesearch (curobj) {curobj.q.value=curobj.qfront.value}
+        </script>
+        <form action="http://www.google.com/search" method="get" onSubmit="Gsitesearch(this)">
+        <p><br />
+            <input name = "q" type="hidden" />
+            <input name="qfront" type="text" style="width: 362px; height: 30px;" /> 
+            <input type="submit" value= "Search" style="width: 100px; height: 30px;" /> 
+        </form>
+    </center>
+    </body>
+    <script type="text/javascript">
+        ChangeIt();
+    </script>
+</html>
