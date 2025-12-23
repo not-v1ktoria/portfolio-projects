@@ -1,0 +1,905 @@
+:root {
+    --base-font-size: 16px;
+}
+
+.background {
+    background-image: url('../img/paw_background.jpg');
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    filter: blur(0.44rem);
+    z-index: -1;
+}
+
+.highlight-pink {
+    font-weight: 600;
+    color: #ba616d;
+}
+
+.highlight-green {
+    font-weight: 600;
+    color: #3c9c85;
+}
+
+.highlight-blue {
+    font-weight: 600;
+    color: #4b9bc9;
+}
+
+.glass-container_1 h1 {
+    color: #bda84c;
+}
+
+.glass-container_2 h1 {
+    color: #ba616d;
+}
+
+.glass-container_3 h1 {
+    color: #3c9c85;
+}
+
+.glass-container_4 h1 {
+    color: #4b9bc9;
+}
+
+.glass-container_5 h1 {
+    color: #9f6de0;
+}
+
+.text-block-about .info {
+    color: #9f6de0;
+    text-shadow: 0.125rem 0.125rem 0.3125rem rgb(103, 100, 100);
+}
+
+
+/* LAYOUT WRAPPER */
+
+.home-hero {
+    display: block;
+    margin-top: 3.75rem;
+    text-align: center;
+}
+
+.photo-layout {
+    position: relative;
+    width: 85%;
+    max-width: 68.75rem;
+    height: 46.875rem;
+    margin: 0 auto;
+    overflow: visible;
+}
+
+
+/* IMAGE CARDS */
+
+.photo-card {
+    position: absolute;
+    width: 14.375rem;
+    height: 11.25rem;
+    object-fit: cover;
+    border-radius: 0.875rem;
+    box-shadow: 0 0.75rem 1.75rem rgba(0, 0, 0, 0.25);
+}
+
+
+/* POSITIONS */
+
+.card1 {
+    top: 5%;
+    left: -7%;
+    transform: rotate(-15deg);
+}
+
+.card2 {
+    top: -2%;
+    left: 37%;
+    transform: rotate(10deg);
+}
+
+.card3 {
+    top: 8%;
+    right: -3%;
+    transform: rotate(12deg);
+}
+
+.card4 {
+    bottom: 8%;
+    left: 3%;
+    transform: rotate(15deg);
+}
+
+.card5 {
+    bottom: 5%;
+    left: 37%;
+    transform: rotate(-10deg);
+}
+
+.card6 {
+    bottom: 8%;
+    right: 3%;
+    transform: rotate(-12deg);
+}
+
+.central-frame {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60%;
+    height: 20.625rem;
+    border-radius: 1.375rem;
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.75);
+    backdrop-filter: blur(0.625rem);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    box-shadow: 0 0.75rem 2rem rgba(0, 0, 0, 0.25);
+}
+
+
+/* VIDEO: Autoplay friendly */
+
+.central-frame video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 1.375rem;
+}
+
+.logo img {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 0.125rem;
+    object-fit: cover;
+}
+
+nav {
+    width: 100%;
+}
+
+.navbar {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0;
+    padding: 0 0.625rem;
+}
+
+.nav-wrapper {
+    width: 80%;
+    margin: 2.5rem auto;
+    padding: 1.25rem 2.5rem;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(0.5625rem);
+    border-radius: 1.5625rem;
+    border: 1px solid rgba(51, 49, 49, 0.333);
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+}
+
+.navbar li {
+    flex: 1;
+    text-align: center;
+}
+
+.navbar a {
+    display: block;
+    padding: 1rem;
+    margin: 0 1.25rem;
+    font-family: 'Funnel Display', system-ui;
+    font-weight: 400;
+    font-size: 1.2rem;
+    text-decoration: none;
+    border-radius: 0.375rem;
+    color: rgb(56, 50, 50);
+    text-shadow: 0.125rem 0.125rem 0.3125rem rgb(103, 100, 100);
+    transition: all 400ms;
+}
+
+.navbar a.active {
+    background-color: #d69676;
+    color: white;
+    border-radius: 0.375rem;
+}
+
+.navbar a:hover {
+    background-color: #d69676;
+    color: white;
+    border-radius: 0.375rem;
+}
+
+.glass-container_1,
+.glass-container_2,
+.glass-container_3,
+.glass-container_4,
+.glass-container_5 {
+    width: 80%;
+    margin: 2.5rem auto;
+    padding: 2.5rem;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(0.5625rem);
+    -webkit-backdrop-filter: blur(0.5625rem);
+    border-radius: 1.5625rem;
+    border: 1px solid rgba(51, 49, 49, 0.333);
+    text-align: center;
+}
+
+.glass-container_1 h1,
+.glass-container_2 h1,
+.glass-container_3 h1,
+.glass-container_4 h1,
+.glass-container_5 h1 {
+    font-family: 'Funnel Display', system-ui;
+    font-weight: 700;
+    font-size: 2rem;
+    text-shadow: 0.125rem 0.125rem 0.3125rem rgb(211, 204, 204);
+}
+
+.about-section,
+.thedayhearrived-section,
+.orangechaos-section,
+.ourbond-section,
+.home-section {
+    display: flex;
+    justify-content: space-between;
+    gap: 2.5rem;
+    text-shadow: 0.125rem 0.125rem 0.3125rem rgb(211, 204, 204);
+    font-family: 'Funnel Display', system-ui;
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+
+.about-section.reverse {
+    flex-direction: row-reverse;
+}
+
+.text-block-about {
+    max-width: 37.5rem;
+    text-align: center;
+}
+
+.video-about {
+    width: 28.125rem;
+    height: 18.75rem;
+    border-radius: 1.25rem;
+    box-shadow: 0.125rem 0.125rem 0.3125rem rgb(211, 204, 204);
+}
+
+.image-frame {
+    max-width: 28.125rem;
+    height: auto;
+    padding: 0.9375rem;
+    border-radius: 1.5625rem;
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(0.625rem);
+    -webkit-backdrop-filter: blur(0.625rem);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    box-shadow: 0 0.9375rem 2.5rem rgba(0, 0, 0, 0.2);
+}
+
+.image-frame img {
+    width: 100%;
+    height: auto;
+    border-radius: 1.25rem;
+    display: block;
+    object-fit: cover;
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto auto;
+    gap: 0.75rem;
+}
+
+.image-grid img {
+    width: 100%;
+    height: 12.5rem;
+    object-fit: cover;
+    border-radius: 0.75rem;
+}
+
+.image-grid img:nth-child(3) {
+    grid-column: 1 / 3;
+    height: 16.25rem;
+}
+
+.grid-photos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 0.625rem;
+}
+
+.grid-photos img {
+    width: 100%;
+    height: 12.5rem;
+    object-fit: cover;
+    border-radius: 0.9375rem;
+    display: block;
+}
+
+.glass-footer {
+    width: 80%;
+    margin: 3.75rem auto;
+    padding: 2.5rem;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(0.625rem);
+    -webkit-backdrop-filter: blur(0.625rem);
+    border-radius: 1.5625rem;
+    border: 1px solid rgba(51, 49, 49, 0.333);
+}
+
+
+/* === PHOTO CAROUSEL FOR THE DAY HE ARRIVED === */
+
+
+/* --- PHOTO CAROUSEL WRAPPER --- */
+
+.photo-carousel {
+    margin-top: 2.5rem;
+    display: flex;
+    gap: 1.25rem;
+    overflow-x: auto;
+    padding-bottom: 0.625rem;
+}
+
+
+/* --- INDIVIDUAL CAROUSEL ITEM --- */
+
+.carousel-item {
+    position: relative;
+    width: 15.625rem;
+    height: 10rem;
+    flex-shrink: 0;
+    border-radius: 1.125rem;
+    overflow: hidden;
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(0.625rem);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    box-shadow: 0 0.75rem 2rem rgba(0, 0, 0, 0.18);
+}
+
+
+/* --- IMAGES INSIDE --- */
+
+.carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 1.125rem;
+    transition: transform 0.4s ease;
+}
+
+
+/* Zoom image on hover */
+
+.carousel-item:hover img {
+    transform: scale(1.1);
+}
+
+
+/* --- CAPTION TEXT --- */
+
+.caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 0.75rem;
+    background: rgba(0, 0, 0, 0.55);
+    color: #fff;
+    font-family: 'Funnel Display', system-ui;
+    font-weight: 400;
+    font-size: 1rem;
+    text-align: left;
+    opacity: 0;
+    transform: translateY(100%);
+    transition: all 0.4s ease;
+    border-radius: 0 0 1.125rem 1.125rem;
+}
+
+
+/* Show caption on hover */
+
+.carousel-item:hover .caption {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+/* SECTION 1 wrapper */
+
+.section1 {
+    margin-top: 3.125rem;
+    display: flex;
+    gap: 2.5rem;
+}
+
+
+/* left content box like pic 2 */
+
+.oc-left-box {
+    flex: 1;
+    background: rgba(255, 255, 255, 0.25);
+    padding: 1.25rem;
+    border-radius: 1.25rem;
+    backdrop-filter: blur(0.625rem);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    box-shadow: 0 0.625rem 1.875rem rgba(0, 0, 0, 0.15);
+}
+
+.oc-left-box img {
+    width: 100%;
+    border-radius: 1.125rem;
+    margin-bottom: 0.9375rem;
+}
+
+
+/* right column of tall images */
+
+.oc-left-images {
+    display: flex;
+    flex-direction: row;
+    gap: 1.25rem;
+}
+
+.oc-tall-1 {
+    width: 15rem;
+    height: 21.875rem;
+    object-fit: cover;
+    border-radius: 1.25rem;
+    box-shadow: 0 0.75rem 2rem rgba(0, 0, 0, 0.25);
+}
+
+
+/* SECTION 2 wrapper */
+
+.orangechaos-section.section2 {
+    flex-direction: row-reverse;
+}
+
+.section2 {
+    margin-top: 3.125rem;
+    display: flex;
+    gap: 2.5rem;
+}
+
+
+/* left content box like pic 2 */
+
+.oc-right-box {
+    flex: 1;
+    background: rgba(255, 255, 255, 0.25);
+    padding: 1.25rem;
+    border-radius: 1.25rem;
+    backdrop-filter: blur(0.625rem);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    box-shadow: 0 0.625rem 1.875rem rgba(0, 0, 0, 0.15);
+}
+
+.oc-right-box img {
+    width: 100%;
+    border-radius: 1.125rem;
+    margin-bottom: 0.9375rem;
+}
+
+
+/* right column of tall images */
+
+.oc-right-images {
+    display: flex;
+    flex-direction: row;
+    gap: 1.25rem;
+}
+
+.oc-right-images video.oc-tall {
+    width: 15rem;
+    height: 21.875rem;
+    object-fit: cover;
+    border-radius: 1.25rem;
+    display: block;
+    box-shadow: 0 0.75rem 2rem rgba(0, 0, 0, 0.25);
+}
+
+
+/* --- ORANGE CHAOS IMAGE + VIDEO CENTERING FIX --- */
+
+.orangechaos-section {
+    align-items: center;
+}
+
+.oc-left-images,
+.oc-right-images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.25rem;
+}
+
+.ourbond-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1.875rem;
+}
+
+.gif-row {
+    display: flex;
+    justify-content: center;
+}
+
+.gif-container {
+    display: flex;
+    justify-content: center;
+    gap: 2.5rem;
+    margin-top: 1.25rem;
+}
+
+.bond-gif {
+    width: 13.75rem;
+    height: 13.75rem;
+    object-fit: cover;
+    border-radius: 1.25rem;
+    box-shadow: 0 0.75rem 2rem rgba(0, 0, 0, 0.25);
+}
+
+.footer-columns {
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Funnel Display', system-ui;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.footer-col {
+    flex: 1;
+}
+
+.footer-logo {
+    font-size: 1.5rem;
+    text-shadow: 0.125rem 0.125rem 0.3125rem black;
+}
+
+.footer-desc {
+    max-width: 15.625rem;
+    margin-bottom: 1.25rem;
+}
+
+.footer-col h3 {
+    margin-bottom: 0.625rem;
+    font-family: 'Funnel Display', system-ui;
+    font-weight: 700;
+    font-size: 1rem;
+    text-shadow: 0.0625rem 0.0625rem 0.25rem grey;
+    text-align: right;
+}
+
+.footer-col a {
+    display: block;
+    margin-bottom: 0.375rem;
+    text-decoration: none;
+    color: rgb(56, 50, 50);
+    transition: 0.3s;
+    text-align: right;
+}
+
+.footer-col a:hover {
+    color: #d69676;
+    text-shadow: 0 0 0.5rem rgba(216, 124, 19, 0.6);
+}
+
+.footer-icons {
+    display: flex;
+    gap: 0.9375rem;
+}
+
+.footer-icon svg {
+    fill: rgb(56, 50, 50);
+    transition: 0.3s;
+}
+
+.footer-icon:hover svg {
+    fill: #d69676;
+    transform: scale(1.2);
+}
+
+.footer-bottom {
+    margin-top: 1.875rem;
+    text-align: center;
+    opacity: 0.7;
+    font-family: 'Funnel Display', system-ui;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+
+/* ==================== RESPONSIVE DESIGN ==================== */
+
+
+/* TABLET (768px and below) */
+
+@media (max-width: 48rem) {
+    .nav-wrapper {
+        width: 90%;
+        margin: 2rem auto;
+        padding: 1rem 1.5rem;
+        gap: 0.75rem;
+    }
+    .navbar a {
+        padding: 0.75rem 0.5rem;
+        margin: 0 0.5rem;
+        font-size: 1rem;
+    }
+    .photo-layout {
+        width: 90%;
+        height: 35rem;
+    }
+    .photo-card {
+        width: 10rem;
+        height: 8rem;
+    }
+    .central-frame {
+        width: 70%;
+        height: 15rem;
+    }
+    .glass-container_1,
+    .glass-container_2,
+    .glass-container_3,
+    .glass-container_4,
+    .glass-container_5 {
+        width: 90%;
+        padding: 1.5rem;
+    }
+    .glass-container_1 h1,
+    .glass-container_2 h1,
+    .glass-container_3 h1,
+    .glass-container_4 h1,
+    .glass-container_5 h1 {
+        font-size: 1.5rem;
+    }
+    .about-section,
+    .thedayhearrived-section,
+    .orangechaos-section,
+    .ourbond-section,
+    .home-section {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+    .text-block-about {
+        max-width: 100%;
+    }
+    .video-about {
+        width: 100%;
+        height: auto;
+    }
+    .image-frame {
+        max-width: 100%;
+    }
+    .section1,
+    .section2 {
+        flex-direction: column;
+        gap: 1.5rem;
+        margin-top: 1.5rem;
+    }
+    .oc-left-images,
+    .oc-right-images {
+        flex-direction: column;
+    }
+    .oc-tall-1,
+    .oc-right-images video.oc-tall {
+        width: 100%;
+        height: 15rem;
+    }
+    .photo-carousel {
+        gap: 1rem;
+        margin-top: 1.5rem;
+    }
+    .carousel-item {
+        width: 12rem;
+        height: 8rem;
+    }
+    .gif-container {
+        gap: 1.5rem;
+        flex-wrap: wrap;
+    }
+    .bond-gif {
+        width: 10rem;
+        height: 10rem;
+    }
+    .footer-columns {
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .footer-col h3 {
+        text-align: left;
+    }
+    .footer-col a {
+        text-align: left;
+    }
+    .glass-footer {
+        width: 90%;
+        padding: 1.5rem;
+    }
+    .home-hero {
+        margin-top: 2rem;
+    }
+}
+
+
+/* MOBILE (480px and below) */
+
+@media (max-width: 30rem) {
+     :root {
+        --base-font-size: 14px;
+    }
+    .home-hero {
+        margin-top: 1.5rem;
+    }
+    .nav-wrapper {
+        width: 95%;
+        margin: 1rem auto;
+        padding: 0.75rem 1rem;
+        gap: 0.5rem;
+    }
+    .navbar {
+        flex-wrap: wrap;
+    }
+    .navbar a {
+        padding: 0.5rem 0.25rem;
+        margin: 0;
+        font-size: 0.9rem;
+    }
+    .photo-layout {
+        width: 95%;
+        height: 25rem;
+    }
+    .photo-card {
+        width: 7rem;
+        height: 6rem;
+        border-radius: 0.5rem;
+    }
+    .central-frame {
+        width: 80%;
+        height: 12rem;
+        border-radius: 1rem;
+    }
+    .logo img {
+        width: 3.5rem;
+        height: 3.5rem;
+    }
+    .glass-container_1,
+    .glass-container_2,
+    .glass-container_3,
+    .glass-container_4,
+    .glass-container_5 {
+        width: 95%;
+        margin: 1rem auto;
+        padding: 1rem;
+        border-radius: 1rem;
+    }
+    .glass-container_1 h1,
+    .glass-container_2 h1,
+    .glass-container_3 h1,
+    .glass-container_4 h1,
+    .glass-container_5 h1 {
+        font-size: 1.25rem;
+    }
+    .about-section,
+    .thedayhearrived-section,
+    .orangechaos-section,
+    .ourbond-section,
+    .home-section {
+        font-size: 1rem;
+        gap: 1rem;
+    }
+    .image-grid {
+        gap: 0.5rem;
+    }
+    .image-grid img {
+        height: 10rem;
+    }
+    .image-grid img:nth-child(3) {
+        height: 12rem;
+    }
+    .grid-photos {
+        gap: 0.5rem;
+    }
+    .grid-photos img {
+        height: 10rem;
+    }
+    .photo-carousel {
+        gap: 0.75rem;
+        margin-top: 1rem;
+    }
+    .carousel-item {
+        width: 10rem;
+        height: 7rem;
+        border-radius: 0.75rem;
+    }
+    .caption {
+        padding: 0.5rem;
+        font-size: 0.85rem;
+    }
+    .section1,
+    .section2 {
+        margin-top: 1rem;
+        gap: 1rem;
+    }
+    .oc-left-box,
+    .oc-right-box {
+        padding: 1rem;
+    }
+    .oc-tall-1,
+    .oc-right-images video.oc-tall {
+        width: 100%;
+        height: 12rem;
+    }
+    .ourbond-section {
+        gap: 1rem;
+    }
+    .gif-container {
+        gap: 1rem;
+        margin-top: 1rem;
+    }
+    .bond-gif {
+        width: 8rem;
+        height: 8rem;
+    }
+    .footer-logo {
+        font-size: 1.25rem;
+    }
+    .footer-columns {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+    .footer-col h3 {
+        margin-bottom: 0.5rem;
+    }
+    .footer-col a {
+        margin-bottom: 0.25rem;
+    }
+    .footer-icons {
+        gap: 0.5rem;
+    }
+    .glass-footer {
+        width: 95%;
+        margin: 1.5rem auto;
+        padding: 1rem;
+    }
+    .footer-bottom {
+        margin-top: 1rem;
+    }
+}
+
+
+/* SMALL MOBILE (360px and below) */
+
+@media (max-width: 22.5rem) {
+    .photo-layout {
+        height: 20rem;
+    }
+    .photo-card {
+        width: 6rem;
+        height: 5rem;
+    }
+    .central-frame {
+        height: 10rem;
+    }
+    .navbar a {
+        font-size: 0.85rem;
+        padding: 0.5rem;
+    }
+    .glass-container_1 h1,
+    .glass-container_2 h1,
+    .glass-container_3 h1,
+    .glass-container_4 h1,
+    .glass-container_5 h1 {
+        font-size: 1.1rem;
+    }
+}
