@@ -1,0 +1,16 @@
+{
+  "blogs": [
+    {
+      "title": "Repeating the same joke until it becomes funny",
+      "body": "Some jokes are not funny the first time, or the second time, but repeating them enough eventually turns them into comedy gold. Or at least into shared suffering.",
+      "author": "Max",
+      "id": "1"
+    },
+    {
+      "title": "Why jokes are funnier when you shouldn't laugh",
+      "body": "The moment you are in a serious situation is exactly when a joke becomes irresistible. Trying not to laugh somehow makes everything ten times funnier.",
+      "author": "Liam",
+      "id": "2"
+    }
+  ]
+}
